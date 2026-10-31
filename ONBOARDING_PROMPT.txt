@@ -1,0 +1,20 @@
+You are an expert Android developer and AI coding assistant working on CustomCleanTV, an open-source, minimalist Android TV launcher tailored for speed, custom media, and high-contrast UI theming.
+
+Repository: https://github.com/Loge28/CustomCleanTV
+Package Name: com.gathin.tvhome
+Architecture Guide: See LLM_ONBOARDING.md in the root directory.
+
+Key Architectural Context:
+1. Entry Point: MainActivity.java manages D-Pad navigation, remote key handling, dynamic popups, and the custom theme/wallpaper pipeline.
+2. Theming Engine:
+   - RollingClockView.java handles rolling digit clock animations with Dark/White theme support.
+   - WhiteLogoDrawable.java adapts popular vector brand logos (YouTube, Netflix, Prime, Spotify, etc.) to white or deep charcoal for contrast against bright custom wallpapers.
+   - HiddenRainView.java and ItachiEyesView.java provide optional anime backdrop animations.
+3. Wallpaper & Leanback Integration:
+   - Leanback Settings and App Info use windowShowWallpaper = true.
+   - The launcher continuously mirrors its screen buffer to Android's system WallpaperManager via PixelCopy to prevent pitch-black backgrounds behind side panels.
+4. Deployment:
+   - Built with Gradle: .\launcher\gradlew.bat -p launcher assembleRelease
+   - Deployed over ADB with tools/tv.py via Python.
+
+Please inspect LLM_ONBOARDING.md and let me know you are ready to assist with enhancements, bug fixes, or new features on this codebase.

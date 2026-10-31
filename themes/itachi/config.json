@@ -1,0 +1,33 @@
+{
+  "background_color": "#000000",
+  "wallpaper": true,
+  "wallpaper_true_color": true,
+  "wallpaper_rotation_minutes": 0,
+  "wallpaper_dim": 18,
+  "columns": 5,
+  "dock_apps": [
+    "com.google.android.youtube.tv",
+    "com.graymatrix.did",
+    "com.android.tv",
+    "com.crunchyroll.crunchyroid",
+    "in.startv.hotstar"
+  ],
+  "fill_dock": true,
+  "dock_band": false,
+  "dock_glass": false,
+  "dock_opacity": 0,
+  "dock_title": false,
+  "date_below_clock": true,
+  "glass_style": "rim",
+  "ambient_glow": false,
+  "app_glow": true,
+  "glow_style": "spotlight",
+  "icon_only_buttons": false,
+  "icon_only_inputs": false,
+  "wifi_status_color": true,
+  "clock_wallpaper": true,
+  "rolling_clock": true,
+  "itachi_eyes": true,
+  "boot_sharingan": true,
+  "tile_menu": true
+}
